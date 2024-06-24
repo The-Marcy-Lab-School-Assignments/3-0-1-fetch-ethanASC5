@@ -11,9 +11,9 @@ const appDiv = document.querySelector('#app');
 app(appDiv);
 
 // Ordinarily this wouldn't be here, we're adding it to make it easier to see your fetch functions
-// checkResponseStatus()
-//   .then(statusInfo => console.log('status:', statusInfo))
-//   .then(() => getUsers())
+checkResponseStatus()
+  .then(statusInfo => console.log('status:', statusInfo))
+  .then(() => getUsers())
 //   .then(users => console.log('users:', users))
 //   .then(() => getUserPosts(1))
 //   .then(posts => console.log('posts:', posts))
