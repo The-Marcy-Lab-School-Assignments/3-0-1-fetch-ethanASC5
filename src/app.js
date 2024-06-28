@@ -12,10 +12,11 @@ import {
   createNewUser, // getting information
   getUsers,
 } from './fetch-functions.js';
-
+/** FEEDBACK: Great job getting all test cases to pass! */
 export default function app(appDiv) {
   const { statusDiv, usersUl, postsUl, newUserForm, newUserDiv } =
     setupPageBasics(appDiv);
+    /** FEEDBACK: If we do not destructure, you would have to access the properties each time you needed them. They would not be in an array but rather in an object! */
   //destructure, objects only 1 value otherwise you will see [] array.
   checkResponseStatus().then((res) => renderStatus(statusDiv, res));
   getUsers().then((res) => renderUsers(usersUl, res));
